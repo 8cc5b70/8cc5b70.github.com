@@ -1,1 +1,21 @@
-Hello World
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="shortcut icon" type="image/jpeg" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<script>
+
+    window.addEventListener('load', function(){
+        document.querySelector('iframe').src = decodeURIComponent(window.location.href.split('?url=')[1])
+    })
+</script>
+<iframe src="" frameborder="0"></iframe>
+<style>
+    body{
+        margin: 0;
+    } 
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+</style>
